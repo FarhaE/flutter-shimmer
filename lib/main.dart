@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import "package:shimmer/shimmer.dart";
 
 void main() {
-  runApp(new MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -46,10 +46,10 @@ class _HomeState extends State<Home> {
             baseColor: Colors.grey.shade500,highlightColor:Colors.grey.shade400,
               child:ListView.builder(itemCount: 6, itemBuilder: (context,index){
                 return Container(
-                  margin: EdgeInsets.all(20),
+                  margin: const EdgeInsets.all(20),
                   height: 100,
                   width: 400,
-                  color: Color.fromARGB(255, 133, 71, 71)       );
+                  color: const Color.fromARGB(255, 133, 71, 71)       );
               },),),
             )
           ),
